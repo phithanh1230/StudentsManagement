@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StudentManagementModelStoreContainer" CdmEntityContainer="StudentManagementEntities">
+    <EntitySetMapping Name="Class">
+      <EntityTypeMapping TypeName="StudentManagementModel.Class">
+        <MappingFragment StoreEntitySet="Class">
+          <ScalarProperty Name="C_Id" ColumnName="C_Id" />
+          <ScalarProperty Name="C_Name" ColumnName="C_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Student">
+      <EntityTypeMapping TypeName="StudentManagementModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="S_Id" ColumnName="S_Id" />
+          <ScalarProperty Name="S_Name" ColumnName="S_Name" />
+          <ScalarProperty Name="S_Birthday" ColumnName="S_Birthday" />
+          <ScalarProperty Name="S_Address" ColumnName="S_Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="StudentClass" TypeName="StudentManagementModel.StudentClass" StoreEntitySet="StudentClass">
+      <EndProperty Name="Class">
+        <ScalarProperty Name="C_Id" ColumnName="C_ID" />
+      </EndProperty>
+      <EndProperty Name="Student">
+        <ScalarProperty Name="S_Id" ColumnName="S_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="FindClasses" FunctionName="StudentManagementModel.Store.FindClasses">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StudentManagementModel.FindClasses_Result">
+          <ScalarProperty Name="C_Id" ColumnName="C_Id" />
+          <ScalarProperty Name="C_Name" ColumnName="C_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FindStudents" FunctionName="StudentManagementModel.Store.FindStudents">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StudentManagementModel.FindStudents_Result">
+          <ScalarProperty Name="S_Id" ColumnName="S_Id" />
+          <ScalarProperty Name="S_Name" ColumnName="S_Name" />
+          <ScalarProperty Name="S_Birthday" ColumnName="S_Birthday" />
+          <ScalarProperty Name="S_Address" ColumnName="S_Address" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FindClassByStudentName" FunctionName="StudentManagementModel.Store.FindClassByStudentName" />
+    <FunctionImportMapping FunctionImportName="FindStudentsInClass" FunctionName="StudentManagementModel.Store.FindStudentsInClass">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StudentManagementModel.FindStudentsInClass_Result">
+          <ScalarProperty Name="S_Name" ColumnName="S_Name" />
+          <ScalarProperty Name="S_Address" ColumnName="S_Address" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

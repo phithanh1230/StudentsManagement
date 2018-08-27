@@ -1,0 +1,9 @@
+C:\Users\Admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.DAO\bin\Debug\StudentsManagement.DAO.dll.config
+C:\Users\Admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.DAO\bin\Debug\StudentsManagement.DAO.dll
+C:\Users\Admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.DAO\bin\Debug\StudentsManagement.DAO.pdb
+C:\Users\Admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.DAO\bin\Debug\EntityFramework.dll
+C:\Users\Admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.DAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.DAO\bin\Debug\EntityFramework.xml
+C:\Users\Admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.DAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.DAO\obj\Debug\StudentsManagement.DAO.dll
+C:\Users\Admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.DAO\obj\Debug\StudentsManagement.DAO.pdb
