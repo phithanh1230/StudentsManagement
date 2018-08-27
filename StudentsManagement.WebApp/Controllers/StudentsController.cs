@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using StudentsManagement.DAO;
+using System.Net;
 
 
 namespace StudentsManagement.WebApp.Controllers
@@ -17,5 +18,17 @@ namespace StudentsManagement.WebApp.Controllers
         {
             return View(db.FindStudents(name).ToList());
         }
+        [HttpPost]
+        public ActionResult Delete(int? id) {
+            if (id == null) {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Student s = db.Student.Find(id);
+            db.Student.Remove(s);
+            db.SaveChanges();
+            return RedirectToAction("Index","Students");
+        }
+
+     
 	}
 }
