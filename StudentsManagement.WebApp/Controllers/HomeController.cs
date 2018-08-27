@@ -13,7 +13,6 @@ namespace StudentsManagement.WebApp.Controllers
         // GET: /Home/
         public ActionResult Index()
         {
-            StudentManagementEntities db = new StudentManagementEntities();
             return View();
         }
 	}

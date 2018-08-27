@@ -3,12 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/Style.css")
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
+    <div class="container-fluid nav-head fixed-top">
+        <div class="row">
+            <div class="col-lg-4 my-2 nav-home">
+                <a href='@Url.Action("Index","Home")'><i class="fas fa-home"></i>Home</a>
+                <a href='@Url.Action("Index","Students")'><i class="fas fa-book-reader"></i>Students</a>
+                <a href='@Url.Action("Index","Classes")'><i class="fas fa-graduation-cap"></i>Classes</a>
+            </div>
+        </div>
+    </div>
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

@@ -53,3 +53,5 @@ c:\users\admin\documents\visual studio 2013\Projects\StudentsManagement\Students
 c:\users\admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.WebApp\obj\Debug\StudentsManagement.WebApp.csprojResolveAssemblyReference.cache
 c:\users\admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.WebApp\obj\Debug\StudentsManagement.WebApp.dll
 c:\users\admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.WebApp\obj\Debug\StudentsManagement.WebApp.pdb
+C:\Users\Admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.WebApp\bin\StudentsManagement.DAO.dll
+C:\Users\Admin\documents\visual studio 2013\Projects\StudentsManagement\StudentsManagement.WebApp\bin\StudentsManagement.DAO.pdb

@@ -1,26 +1,17 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
 }
-@Styles.Render("~/Content/Style.css")
+@model IEnumerable<StudentsManagement.DAO.FindStudents_Result>
 
-
-<div class="container-fluid nav-head fixed-top">
-    <div class="row">
-        <div class="col-lg-4 my-2 nav-home">
-            <a href='@Url.Action("Index","Home")'><i class="fas fa-home"></i>Home</a>
-            <a href="#"><i class="fas fa-book-reader"></i>Students</a>
-            <a href="#"><i class="fas fa-graduation-cap"></i>Classes</a>
-        </div>
-    </div>
-</div>
 <div class="container">
     <div class="search-box">
         <h1><i class="fas fa-user-graduate"></i>Students Management</h1>
-        <div class="form-group">
-            <input class="form-control input-search" placeholder="Find studens..." type="text">
-            <input class="btn btn-search" type="submit" value="Search">
-        </div>
+        @using (Html.BeginForm("Index", "Students"))
+        {
+            <div class="form-group">
+                <input class="form-control input-search" placeholder="Find studens..." type="text" name="name">
+                <input class="btn btn-search" type="submit" value="Search">
+            </div>
+        }
     </div>
 </div>
-
